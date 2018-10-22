@@ -4,7 +4,6 @@
     <div class="main-container">
       <div v-for="item in items" :key="item.fields.name" class="container-team">
         <template v-if="item.fields.departement = 'benevole'">
-          <div :style="{ 'background-image': 'url(' + item.fields.Photo[0].url + ')' }" class="photo-team"></div>
           <p class="name-team">{{ item.fields.Name }}</p>
           <p class="title-team">{{ item.fields.Titre }}</p>
         </template>

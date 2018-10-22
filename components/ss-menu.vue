@@ -1,6 +1,7 @@
 <template>
   <div id="Menu">
     <router-link to="/jesus">Jésus</router-link>
+    <router-link to="/reveil">Réveil</router-link>
     <router-link to="/evenements">Événements</router-link>
     <router-link to="/impliquetoi">Implique-toi</router-link>
     <router-link to="/messages">Messages</router-link>

@@ -41,6 +41,11 @@
         </Hero>
       </slide>
     </carousel>
+    <div v-for="item in items" :key="item.id" class="annonces">
+      <template>
+          <p class="title-team">{{ item.fields.Titre }}</p>
+        </template>
+    </div>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>
@@ -69,6 +74,7 @@
 </template>
 <script>
 import { Carousel, Slide } from 'vue-carousel'
+import axios from 'axios'
 
 export default {
   name: 'evenement',
@@ -86,7 +92,8 @@ export default {
     return {
       dimanche: false,
       intercession: false,
-      bstudy: false
+      bstudy: false,
+      items: []
     }
   },
   head () {
@@ -100,6 +107,29 @@ export default {
         {property: 'og:image', content: '../assets/evenement-bstudy.jpg'}
       ]
     }
+  },
+  methods: {
+    loadItems: function() {
+      // Init variables
+      var self = this
+      var app_id = "appkbIaWleiR7gYtU";
+      var app_key = "keyYpAgTFas9oMW80"; // Read Only Key! :D
+      this.items = []
+      axios.get(
+        "https://api.airtable.com/v0/" + app_id + "/Annonces", {
+          headers: {
+            Authorization: "Bearer " + app_key
+          }
+        }
+      ).then(function(response) {
+        self.items = response.data.records
+      }).catch(function(error) {
+        console.log(error)
+      })
+    }
+  },
+  mounted () {
+    this.loadItems()
   }
 }
 </script>

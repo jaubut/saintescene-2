@@ -4,6 +4,9 @@
       <router-link to="/">
         <h1 class="logo">Sainte Scène</h1>
       </router-link>
+      <router-link class="annonce" to="/reveil">
+        <p class="annonce">Jeûne & prière en cours !</p>
+      </router-link>
       <img @click="trigger" class="burger" src="~/assets/burger-icon.svg" alt="burger">
     </header>
     <transition name="fade">
@@ -78,5 +81,10 @@ export default {
     right: 0;
     margin-right: 25px;
     margin-bottom: 175px;
+  }
+  .annonce {
+    margin: auto;
+    text-align: center;
+    color: white;
   }
 </style>

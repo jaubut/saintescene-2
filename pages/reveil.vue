@@ -21,13 +21,24 @@
       <blockquote>Ressources</blockquote>
       <P>Idées pour votre heure et votre vie de prières.</P>
       <div class="">
-        <a href="https://www.24-7prayer.com/signup/0aa8bc" target="blank">
+        <p>APPRENDRE À ÉCOUTER</p>
+        <a href="/pdf/ecoute.pdf" target="blank">
         <button class="button-ressource">Télécharger</button>
       </a>
-      <a href="https://www.24-7prayer.com/signup/0aa8bc" target="blank">
+      <p>DÉCLARATIONS POUR LA VIE DE VOS ENFANTS</p>
+      <a href="/pdf/declare.pdf" target="blank">
         <button class="button-ressource">Télécharger</button>
       </a>
-      <a href="https://www.24-7prayer.com/signup/0aa8bc" target="blank">
+      <p>LE JEÛNE</p>
+      <a href="/pdf/jeune.pdf" target="blank">
+        <button class="button-ressource">Télécharger</button>
+      </a>
+      <p>ÉTUDES BIBLIQUES SUR LA PRIÈRE</p>
+      <a href="/pdf/priere.pdf" target="blank">
+        <button class="button-ressource">Télécharger</button>
+      </a>
+       <p>UNE HEURE DANS LA PRÉSENCE DE DIEU</p>
+      <a href="/pdf/uneheure.pdf" target="blank">
         <button class="button-ressource">Télécharger</button>
       </a>
       </div>

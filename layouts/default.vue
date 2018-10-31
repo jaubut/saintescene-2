@@ -7,7 +7,7 @@
       <router-link class="annonce" to="/reveil">
         <p class="annonce">Jeûne & prière en cours !</p>
       </router-link>
-      <img @click="trigger" class="burger" src="~/assets/burger-icon.svg" alt="burger">
+      <button class="menu" @click="trigger">menu</button>
     </header>
     <transition name="fade">
       <ssMenu v-on-click-outside="close" @click.native="show = false" v-if="show"></ssMenu>
@@ -86,5 +86,18 @@ export default {
     margin: auto;
     text-align: center;
     color: white;
+  }
+  .menu {
+    width: 75px;
+    height: 30px;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 100px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem; 
+    background: none;
+    color: white;
+    cursor: pointer;
   }
 </style>

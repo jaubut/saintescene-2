@@ -26,6 +26,11 @@
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
+    <div class="photo-title">
+      <h3 class="">Photos</h3>
+      <p>Les photos de la semaine.</p>
+    </div>
+    <p></p>
     <div class="photo-section">
       <div v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
         <img v-img:group :src="photo.fields.file.url + '?w=800&h=800'" class="photo">
@@ -121,6 +126,7 @@ export default {
   font-size: 3rem;
 }
 
+
 .link {
   color: #B2152D;
 }
@@ -157,6 +163,12 @@ export default {
   flex-flow: row wrap;
   padding: .5vw;
   text-align: center;
+}
+.photo-title {
+  text-align: center;
+}
+.photo-title h3 {
+  font-size: 3rem;
 }
 .photo-section div { 
   flex: auto; 

@@ -42,8 +42,9 @@ export default {
   line-height: 2rem;
 }
 #Menu a {
-  font-family: "Display Fair", serif;
+  font-family: "Barlow", sans-serif;
   font-size: 2rem;
+  font-weight: bold;
   width: inherit;
 }
 #Menu a:hover {

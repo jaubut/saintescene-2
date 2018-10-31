@@ -15,7 +15,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: 'https://fonts.googleapis.com/css?family=Barlow|Germania+One|Playfair+Display', rel: 'stylesheet' }
+      { href: 'https://fonts.googleapis.com/css?family=Barlow|Germania+One', rel: 'stylesheet' }
     ],
     script: [
       { src: 'https://static.airtable.com/js/embed/embed_snippet_v1.js' },

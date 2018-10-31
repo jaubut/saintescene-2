@@ -5,6 +5,8 @@
         <h1>Réveil</h1>
         <p><strong>Semaine de jeûne & prières</strong></p>
         <P class="petit-text">Du 28 octobre au 4 novembre 2018</P>
+        </br>
+        <p>L'église sera ouverte à compter de 7h30 le matin et la fermeture sera à 21h00;</br>donc durant la nuit les locaux seront fermés.</p>
       </div>
     </Hero>
     <div class="container">

@@ -1,7 +1,7 @@
 <template>
   <div class="calendrier">
     <H3>{{ thisMonth }}</H3>
-    <template v-for="item in items" v-show="item.fiels.Mois ===! ''" v-if="item.fields.Mois === thisMonth">
+    <template v-for="item in itemsOrdered" v-show="item.fiels.Mois ===! ''" v-if="item.fields.Mois === thisMonth">
       <div :key="item.id" class="annonces">
         <p class="titre"><span class="jour">{{ item.fields.Jour }}</span>{{ item.fields.Titre }}</p>
         <p class="description">{{ item.fields.Description }}</p>
@@ -20,6 +20,11 @@ export default {
     return {
       items: [],
       thisMonth: this.Month
+    }
+  },
+  computed: {
+    itemsOrdered () {
+      return this.items.sort((a, b) => new Date(a.fields.Date) - new Date(b.fields.Date))
     }
   },
   methods: {

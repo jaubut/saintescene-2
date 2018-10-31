@@ -38,7 +38,7 @@ export default {
   color: black;
 }
 .full {
-  background: #fafbfc !important;
+  background: #847e6c !important;
 }
 .full p {
   color: black !important;

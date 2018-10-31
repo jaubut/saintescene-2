@@ -5,8 +5,8 @@
         <h1>Réveil</h1>
         <p><strong>Semaine de jeûne & prières</strong></p>
         <P class="petit-text">Du 28 octobre au 4 novembre 2018</P>
-        </br>
-        <p>L'église sera ouverte à compter de 7h30 le matin et la fermeture sera à 21h00;</br>donc durant la nuit les locaux seront fermés.</p>
+        <br>
+        <p>L'église sera ouverte à compter de 7h30 le matin et la fermeture sera à 21h00;<br>donc durant la nuit les locaux seront fermés.</p>
       </div>
     </Hero>
     <div class="container">
@@ -18,7 +18,7 @@
       <a href="https://www.24-7prayer.com/signup/0aa8bc" target="blank">
         <button class="button-notif">Réserver une place</button>
       </a>
-      <br></br>
+      <br><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/auUleubQbYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <blockquote>Ressources</blockquote>
       <P>Idées pour votre heure et votre vie de prières.</P>

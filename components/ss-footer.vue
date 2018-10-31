@@ -114,7 +114,7 @@ export default {
   font-size: 0.9rem;
 }
 .text h3 {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair" serif;
   font-weight: 100;
 }
 .text .info {

@@ -27,7 +27,6 @@ export default {
   height: 100%;
 }
 .hero h1 {
-  font-family: "Germania One", cursive;
   font-size: 5rem;
 }
 @media(max-width:468px) {
@@ -57,7 +56,6 @@ export default {
   background: rgba(0, 0, 0, 0.5);
 }
 .text h1 {
-  font-family: "Germania One", cursive;
   font-size: 5rem;
 }
 .text p {

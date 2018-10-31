@@ -13,10 +13,6 @@
       </Slide>
     </Carousel>
     <iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
-    <div>
-      <h2>Horaires semaine jeûne et prière</h2>
-      <p>L'église sera ouverte à compter de 7h30 le matin et la fermeture sera à 21h00;  donc durant la nuit les locaux seront fermés.</p>
-    </div>
     <BlocMission  title="Notre Mission"
                   text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
                   signature="Samuel & Laure Gingras"
@@ -122,7 +118,6 @@ export default {
   padding: 5% 0;
 }
 .tag h3 {
-  font-family: "Germania One", cursive;
   font-size: 3rem;
 }
 

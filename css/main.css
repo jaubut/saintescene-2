@@ -78,7 +78,7 @@ html, body {
     padding: 5% 20%;
   }
   .first-letter {
-    font-family: "Germania One", cursive;
+    font-family: "Display Fair", serif;
     font-size: 3rem;
     align-self: flex-start;
     color: black;
@@ -92,7 +92,10 @@ html, body {
       padding: 5% 5%;
     }
   }
-  h1, h2, h3, h4, h5, p, body h1, body h2, body h3, body h4, body h5, body p {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Display Fair", serif;
+  }
+  h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
   }
@@ -100,7 +103,7 @@ html, body {
     font-family: "Barlow", sans-serif;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    color: #656567;
+    color: #333333;
   }
   .fade-enter-active, .fade-leave-active, body .fade-enter-active, body .fade-leave-active {
     transition: opacity 0.5s ease-in-out;

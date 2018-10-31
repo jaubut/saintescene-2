@@ -52,7 +52,7 @@ iframe {
   overflow: hidden;
 }
 .text .h3 {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair" serif;
   font-size: 4rem;
   color: white;
 }

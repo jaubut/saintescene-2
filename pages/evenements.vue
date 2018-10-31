@@ -1,51 +1,11 @@
 <template>
   <div id="evenement">
-    <carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
-      <slide>
-        <Hero  class="chandail accueil">
-          <div class="text">
-          <h1>Chandails disponibles</h1>
-          <p>2 pour 20$ 1 pour 15$</p>
-        </div>
-        </Hero>
-      </slide>
-      <slide>
-        <Hero  class=" compassion accueil">
-          <div class="text">
-            <h1>Ministère Compassions</h1>
-            <p>Amenez vos denrées non périssables dans le vestibule.</p>
-          </div>
-        </Hero>
-      </slide>
-      <slide>
-        <Hero class="hero-event accueil ">
-          <div class="text">
-            <h1>Bstudy</h1>
-            <p>Tous les mercredis de 7@8.<br>Au Grendel</p>
-          </div>
-        </Hero>
-      </slide>
-      <slide>
-        <Hero class="intercession accueil ">
-          <div class="text">
-            <h1>Intercession</h1>
-            <p>Mercredi, vendredi et dimanche de 8@9h30.<br>à Sainte Scène St-Charles</p>
-          </div>
-        </Hero>
-      </slide>
-      <slide>
-        <Hero class=" campus accueil">
-          <div class="text">
-            <h1>Nouveau Campus <br> Sainte Scène Cowie</h1>
-          </div>
-        </Hero>
-      </slide>
-    </carousel>
-    <div v-for="item in items" :key="item.id" class="annonces">
-      <template>
-          <p class="title-team">{{ item.fields.Titre }}</p>
-        </template>
-    </div>
+    <Hero class="hero-evenement">
+      <div class="text"><h1>Calendrier</h1></div> 
+    </Hero>
+    <Calendrier Month="Octobre"></Calendrier>
+    <Calendrier Month="Novembre"></Calendrier>
+    <Calendrier Month="Décembre"></Calendrier>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>
@@ -55,7 +15,7 @@
           <p>Texte  <span><button class="button-notif">DIMANCHE</button></span> au <a href="sms:1-226-212-4477"><span class="phone-number">+1 226 212 4477</span></a> pour recevoir toutes les notifs en liens avec le Dimanche.</p>
         </div>
       </transition>
-      <h2 @click="intercession =! intercession">Intercession</h2>
+      <h2 @click="intercession =! intercession">Réveil Sainte Scène</h2>
       <transition name="fade">
         <div class="text-desc" v-if="intercession">
           <p>Le groupe d’Intercession est la première lumière allumée dans les coulisses de <strong>Sainte Scène</strong> chaque <strong>mercredi, vendredi et dimanche matin de 7h30 à 9h30</strong>. Fais partie de l’équipe de prière qui se rencontre pour intercéder les uns pour les autres, pour notre communauté, notre ville, notre région, notre province et notre nation. La prière active tout !<br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>Lieu de rencontre: 1236 rue St-Charles S.</p></a></p>
@@ -73,14 +33,12 @@
   </div>
 </template>
 <script>
-import { Carousel, Slide } from 'vue-carousel'
-import axios from 'axios'
+import Calendrier from '@/components/calendrier'
 
 export default {
   name: 'evenement',
   components: {
-    Carousel,
-    Slide
+    Calendrier
   },
   computed: {
     currentDate () {
@@ -92,8 +50,7 @@ export default {
     return {
       dimanche: false,
       intercession: false,
-      bstudy: false,
-      items: []
+      bstudy: false
     }
   },
   head () {
@@ -107,29 +64,6 @@ export default {
         {property: 'og:image', content: '../assets/evenement-bstudy.jpg'}
       ]
     }
-  },
-  methods: {
-    loadItems: function() {
-      // Init variables
-      var self = this
-      var app_id = "appkbIaWleiR7gYtU";
-      var app_key = "keyYpAgTFas9oMW80"; // Read Only Key! :D
-      this.items = []
-      axios.get(
-        "https://api.airtable.com/v0/" + app_id + "/Annonces", {
-          headers: {
-            Authorization: "Bearer " + app_key
-          }
-        }
-      ).then(function(response) {
-        self.items = response.data.records
-      }).catch(function(error) {
-        console.log(error)
-      })
-    }
-  },
-  mounted () {
-    this.loadItems()
   }
 }
 </script>
@@ -137,6 +71,11 @@ export default {
 #evenement {
   width: 100%;
   height: 100%;
+}
+.hero-evenement {
+  background-image: url(../assets/evenement-bstudy.jpg);
+  background-position: top center !important; 
+  grid-column: span 2;
 }
 .picture {
   grid-area: 1/2/2/4;
@@ -176,7 +115,7 @@ export default {
   padding: 10% 0%;
 }
 .text-group h2 {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair", serif;
   font-size: 2rem;
   margin: 25px;
   padding: 0 20%;
@@ -192,12 +131,15 @@ export default {
   }
 }
 .text-group span {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair", serif;
   font-size: 0.9rem;
   margin-top: -10px;
 }
 .text-group p {
   margin-top: 10%;
+}
+.text h1 {
+  font-family: "Display Fair", serif;
 }
 .separator {
   height: 1px;

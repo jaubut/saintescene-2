@@ -42,7 +42,7 @@ export default {
   line-height: 2rem;
 }
 #Menu a {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair", serif;
   font-size: 2rem;
   width: inherit;
 }

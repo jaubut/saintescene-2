@@ -23,7 +23,7 @@ export default {
   padding: 5%;
 }
 #blocMission .title {
-  font-family: "Germania One", cursive;
+  font-family: "Display Fair" serif;
   font-size: 3rem;
   color: black;
 }
@@ -54,7 +54,7 @@ export default {
   background-image: url(../assets/laureetsam-2.png);
 }
 #blocMission .signature {
-  font-family: "Germania One", sans-serif;
+  font-family: "Display Fair" serif;
   font-size: 1.5rem;
   color: black;
   margin-top: 15px;

@@ -115,7 +115,7 @@ export default {
   padding: 10% 0%;
 }
 .text-group h2 {
-  font-family: "Display Fair", serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 2rem;
   margin: 25px;
   padding: 0 20%;
@@ -131,7 +131,7 @@ export default {
   }
 }
 .text-group span {
-  font-family: "Display Fair", serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 0.9rem;
   margin-top: -10px;
 }
@@ -139,7 +139,7 @@ export default {
   margin-top: 10%;
 }
 .text h1 {
-  font-family: "Display Fair", serif;
+  font-family: 'Barlow', sans-serif;
 }
 .separator {
   height: 1px;

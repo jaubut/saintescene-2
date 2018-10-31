@@ -68,7 +68,7 @@ export default {
   padding-left: 50px; 
 }
 .calendrier .titre {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 1.5rem;
   color: black;
   padding: 15px 0;
@@ -79,7 +79,7 @@ export default {
   max-width: 850px;
 }
 .calendrier .jour {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 800;
   font-size: 2rem;
   padding-right: 15px;

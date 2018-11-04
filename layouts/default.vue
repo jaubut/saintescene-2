@@ -4,9 +4,6 @@
       <router-link to="/">
         <h1 class="logo">Sainte Scène</h1>
       </router-link>
-      <router-link class="annonce" to="/reveil">
-        <p class="annonce">Jeûne & prière en cours !</p>
-      </router-link>
       <button class="menu" @click="trigger">menu</button>
     </header>
     <transition name="fade">

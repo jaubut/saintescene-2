@@ -23,7 +23,7 @@ export default {
   padding: 5%;
 }
 #blocMission .title {
-  font-family: "Display Fair" serif;
+  font-family: "Barlow", sans-serif;
   font-size: 3rem;
   color: black;
 }

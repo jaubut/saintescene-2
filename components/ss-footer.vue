@@ -52,7 +52,7 @@ export default {
   height: 100%;
   display: grid;
   grid-template: 5% 65% 20%/5% 45% 45% 5%;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 .social {
   grid-area: 1/2/2/4;

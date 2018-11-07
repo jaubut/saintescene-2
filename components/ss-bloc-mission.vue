@@ -44,6 +44,11 @@ export default {
     margin: 50px 0 20px 0;
   }
 }
+@media(max-width:468px) {
+  #blocMission {
+    margin-top: -75px;
+  }
+}
 #blocMission .img {
   height: 125px;
   width: 125px;

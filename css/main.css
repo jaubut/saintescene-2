@@ -23,13 +23,14 @@ html, body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding: 0 50px;
+    justify-content: space-between;
+    padding: 15px;
   }
   header .logo, body header .logo {
     font-family: "Germania One", cursive;
     font-size: 1.5rem;
     font-weight: 200;
-    padding-left: 100px;
+    padding-left: 25px;
   }
   header .live, body header .live {
     height: 60%;

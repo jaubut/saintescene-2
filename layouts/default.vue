@@ -10,7 +10,7 @@
       <ssMenu v-on-click-outside="close" @click.native="show = false" v-if="show"></ssMenu>
     </transition>
     <transition name="transite">
-      <main @click="show = false" :class="{ active: show}">
+      <main @click="show = false">
         <router-view></router-view>
         <button @click="toggle =! toggle" class="button-notif round-give">Donnez ici</button>
         <transition name="fade">
@@ -96,5 +96,7 @@ export default {
     background: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
 </style>

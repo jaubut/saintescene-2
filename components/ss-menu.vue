@@ -1,11 +1,16 @@
 <template>
-  <div id="Menu">
-    <router-link to="/jesus">Jésus</router-link>
-    <router-link to="/reveil">Réveil</router-link>
-    <router-link to="/evenements">Événements</router-link>
-    <router-link to="/impliquetoi">Implique-toi</router-link>
-    <router-link to="/messages">Messages</router-link>
-    <router-link to="/contacts">Fiche Contact</router-link>
+  <div id="container-menu">
+    <div id="Menu">
+      <router-link to="/jesus">Jésus</router-link>
+      <router-link to="/reveil">Réveil</router-link>
+      <router-link to="/evenements">Événements</router-link>
+      <router-link to="/impliquetoi">Implique-toi</router-link>
+      <router-link to="/messages">Messages</router-link>
+      <router-link to="/contacts">Fiche Contact</router-link>
+    </div>
+    <div id="menu-svg">
+      <img id="menu-svg-coupe" src="../assets/logo-coupe-black.svg" alt="">
+    </div>
   </div>
 </template>
 <script>
@@ -27,23 +32,25 @@ export default {
 }
 </script>
 <style scoped>
+#container-menu {
+  position: fixed;
+  z-index: 1;
+  background: white;
+  height: 100vh;
+  width: 100%;
+}
 #Menu {
-  position: absolute;
-  z-index: 0;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 15% 2% 2% 2%;
-  padding: 2% 2%;
-  height: auto;
-  width: 92%;
   display: flex;
   flex-flow: column wrap;
-  border-radius: 5px;
   text-align: left;
   line-height: 2rem;
+  padding: 2%;
 }
 #Menu a {
   font-family: "Barlow", sans-serif;
+  color: black;
   font-size: 2rem;
+  line-height: 2.25rem;
   font-weight: bold;
   width: inherit;
 }
@@ -54,9 +61,16 @@ export default {
 .button-notif {
   margin-top: 25px;
 }
-@media screen and (min-width: 468px) {
-  #Menu {
-    margin: 5% 2% 2% 2%;
-  }
+#menu-svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#menu-svg-coupe {
+  width: 75px;
 }
 </style>

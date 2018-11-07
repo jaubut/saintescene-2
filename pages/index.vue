@@ -26,11 +26,10 @@
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
-    <div class="photo-title">
+    <div class="tag">
       <h3 class="">Photos</h3>
       <p>Les photos de la semaine.</p>
     </div>
-    <p></p>
     <div class="photo-section">
       <div v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
         <img v-img:group :src="photo.fields.file.url + '?w=800&h=800'" class="photo">
@@ -124,6 +123,7 @@ export default {
 }
 .tag h3 {
   font-size: 3rem;
+  font-weight: bolder;
 }
 
 

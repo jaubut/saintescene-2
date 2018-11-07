@@ -46,7 +46,7 @@ export default {
 }
 @media(max-width:468px) {
   #blocMission {
-    margin-top: -75px;
+    margin-top: -150px;
   }
 }
 #blocMission .img {
@@ -59,7 +59,7 @@ export default {
   background-image: url(../assets/laureetsam-2.png);
 }
 #blocMission .signature {
-  font-family: "Display Fair" serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1.5rem;
   color: black;
   margin-top: 15px;

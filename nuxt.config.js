@@ -59,6 +59,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
+    '@nuxtjs/onesignal',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap'

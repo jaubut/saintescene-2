@@ -54,6 +54,15 @@ module.exports = {
     name: 'Sainte Scène',
     lang: 'fr'
   },
+  oneSignal: {
+    init: {
+      appId: '5fc33803-77a4-414f-98b4-8733f97ae5d3',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+          disable: true
+      }
+    }
+  },
   /*
   ** Nuxt.js modules
   */

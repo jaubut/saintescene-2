@@ -114,7 +114,7 @@ export default {
   font-size: 0.9rem;
 }
 .text h3 {
-  font-family: "Display Fair" serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 100;
 }
 .text .info {

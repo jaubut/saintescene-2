@@ -1,23 +1,22 @@
 html, body {
     background: #A50E2F;
-    background-size: 400% 400%;
+    background-size: 100% 100%;
     margin: 0;
     padding: 0;
     color: white;
     animation: bgAnim 4s ease infinite;
   }
-  a, body a {
+  a {
     text-decoration: none;
     color: inherit;
   }
-  a:hover, body a:hover {
+  a:hover {
     color: inherit;
   }
-  header, body header {
+  header {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 100%;
+    width: calc(100vw - 30px);
     z-index: 1;
     height: 50px;
     display: flex;
@@ -26,17 +25,10 @@ html, body {
     justify-content: space-between;
     padding: 15px;
   }
-  header .logo, body header .logo {
+  header .logo {
     font-family: "Germania One", cursive;
     font-size: 1.5rem;
     font-weight: 200;
-    padding-left: 25px;
-  }
-  header .live, body header .live {
-    height: 60%;
-    margin-left: -25px;
-    animation: bounce 2s infinite ease-in-out;
-    cursor: pointer;
   }
   @keyframes bounce {
     0%, 100% {

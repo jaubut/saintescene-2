@@ -4,7 +4,7 @@
       <router-link to="/">
         <h1 class="logo">Sainte Scène</h1>
       </router-link>
-      <button class="menu" @click="trigger">menu</button>
+      <button class="menu" @click="trigger"><p>menu</p></button>
     </header>
     <transition name="fade">
       <ssMenu v-on-click-outside="close" @click.native="show = false" v-if="show"></ssMenu>
@@ -90,13 +90,17 @@ export default {
     border-color: white;
     border-width: 2px;
     border-radius: 100px;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem; 
     background: none;
     color: white;
+    text-align: center;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+  }
+  .menu p {
+    color: white;
+    line-height: 1.2rem;
   }
 </style>

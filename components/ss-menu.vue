@@ -2,12 +2,12 @@
   <div id="container-menu">
     <div id="Menu">
       <router-link to="/jesus">Jésus</router-link>
-      <router-link to="/reveil">Réveil</router-link>
       <router-link to="/evenements">Événements</router-link>
       <router-link to="/impliquetoi">Implique-toi</router-link>
       <router-link to="/messages">Messages</router-link>
       <router-link to="/contacts">Fiche Contact</router-link>
     </div>
+    <button class="menu-x"><p>x</p></button>
     <div id="menu-svg">
       <img id="menu-svg-coupe" src="../assets/logo-coupe-black.svg" alt="">
     </div>
@@ -45,6 +45,7 @@ export default {
   text-align: left;
   line-height: 2rem;
   padding: 2%;
+  width: max-content;
 }
 #Menu a {
   font-family: "Barlow", sans-serif;
@@ -72,5 +73,28 @@ export default {
 }
 #menu-svg-coupe {
   width: 75px;
+}
+.menu-x {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 100px;
+  background: none;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.menu-x p {
+  color: black;
+  line-height: 1.2rem;
 }
 </style>

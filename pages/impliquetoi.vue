@@ -73,7 +73,6 @@ textarea {
   height: 100px;
 }
 h2 {
-  font-family: "Germania One", cursive;
   font-size: 3rem;
   padding-bottom: 35px;
 }

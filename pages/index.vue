@@ -22,7 +22,7 @@
       <p>Voir tous <router-link to="/messages"><span class="link">les messages</span></router-link></p>
     </div>
     <div class="message-section">
-      <template v-for="message in messages.slice(0, 2)">
+      <template v-for="message in messages.slice(0, 1)">
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
@@ -41,7 +41,7 @@
 import { Carousel, Slide } from 'vue-carousel'
 import {createClient} from '@/plugins/contentful'
 import BlocMission from '@/components/ss-bloc-mission'
-import BlocMessage from '@/components/ss-bloc-message'
+import BlocMessage from '@/components/ss-bloc-message-index'
 
 const client = createClient()
 

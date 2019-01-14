@@ -3,8 +3,8 @@
     <Hero class="hero-evenement">
       <div class="text"><h1>Calendrier</h1></div> 
     </Hero>
-    <Calendrier Month="Décembre"></Calendrier>
     <Calendrier Month="Janvier"></Calendrier>
+    <Calendrier Month="Février"></Calendrier>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>

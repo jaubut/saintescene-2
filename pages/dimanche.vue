@@ -19,9 +19,17 @@
       <div class="texte">
         <p class="big-text">10h - 11h</p>
         <h3>Louange</h3>
-        <p>À chaque semaine, notre équipe de louange nous amène dans l'adoration dans une ambiance chaleureuse et puissante. Pour tous les enfants de 5 ans et +, une session de louange est animé au deuxième étage.</p>
+        <p>À chaque semaine, notre équipe de louange nous amène dans l'adoration dans une ambiance chaleureuse et puissante.</p>
       </div>
       <img src="../assets/dimanche/louange.jpg" alt="">
+    </div>
+    <div class="bloc span-2 row">
+      <div class="texte center">
+        <img class="mini-scene" src="../assets/dimanche/mini-scene-logo.png" alt="">
+        </br>
+        <p>Pour les enfants de 3 à 5 ans, un temps de louange est dédié pour eux à l'étage.</p>
+      </div>
+      <img src="../assets/dimanche/mini-scene.jpg" alt="">
     </div>
     <div class="bloc span-2 grey row">
       <img src="../assets/dimanche/message.png" alt="">
@@ -79,6 +87,14 @@ textarea {
 }
 .texte img {
   height: 100px;
+}
+.mini-scene {
+  width: 150px !important;
+  height: auto !important; 
+  margin: auto !important;
+}
+.center {
+  text-align: center !important;
 }
 h2 {
   font-size: 3rem;
@@ -141,7 +157,6 @@ p {
 }
 .row .texte img {
   height: 100px;
-  width: 100px !important;
 }
 .row .texte p {
   padding: 0;

@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="alert">
+      <small>Exceptionnellement, le rassemblement d'aujourd'hui est annulé à cause de la température. Bon dimanche à tous !</small>
+    </div>
     <header>
       <router-link to="/">
         <h1 class="logo">Sainte Scène</h1>
@@ -59,6 +62,19 @@ export default {
 </script>
 
 <style>
+  .alert {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    height: 30px;
+    width: 100vw;
+  }
+  .alert small {
+    color: white;
+    font-size: 0.9rem;
+  }
   .round-give {
     position: fixed;
     bottom: 0;

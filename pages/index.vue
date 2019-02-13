@@ -1,7 +1,7 @@
 <template>
   <div id="Index">
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
-      <Slide v-for="photo in photos" :key="photo.fields.title" v-if="photo.fields.title === 'intro'" >
+      <Slide v-for="photo in photos" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
           <div class="text">
             <img src="~/assets/logo-white.svg" height="250px" class="logo-hero" alt="">
@@ -52,6 +52,13 @@ export default {
     BlocMessage,
     Carousel,
     Slide
+  },
+  computed: {
+    intros: function () {
+      return this.photos.filter(function (photo) {
+        return photo.fields.title == 'intro'
+      })
+    }
   },
   asyncData ({ env, params }) {
     return Promise.all([

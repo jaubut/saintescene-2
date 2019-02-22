@@ -25,8 +25,8 @@
         <div class="text">
           <h3>Prochains Événements</h3>
           <p v-if="currentDate >= 5">Réunion Dimanche <span class="info">10h - 12h</span></p>
-          <p>Intercession <span class="info" v-if="currentDate <= 3">Mercredi 7h30</span><span class="info" v-if="currentDate <= 5">Vendredi 7h30</span></p>
-          <p v-if="currentDate <= 3">B Study<span class="info"> Mercredi 19h - 21h</span></p>
+          <p>Intercession <span class="info" v-if="currentDate <= 3">Mercredi 8h00</span><span class="info" v-if="currentDate <= 5">Vendredi 8h00</span></p>
+          <p v-if="currentDate <= 3">Bstudy<span class="info"> Mercredi 19h - 21h</span></p>
         </div>
       </router-link>
     </div>

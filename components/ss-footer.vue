@@ -32,7 +32,7 @@
     </div>
     <img class="footer-coupe" src="~/assets/logo-coupe-rose.svg" alt="logo coupe rose">
     <div class="footer-right">
-      <p>© 2018 sainte Scène <br>All rights reserved. <br>Crafted by <a href="https://www.jaubut.space" target="_blank"><span>Jérémie Aubut</span></a></p>
+      <p>© 2018 sainte Scène <br>All rights reserved. <br>Crafted by <a href="" target="_blank"><span>Jérémie Aubut</span></a></p>
     </div>
   </div>
 </template>

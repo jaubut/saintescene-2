@@ -56,7 +56,7 @@ export default {
   computed: {
     intros: function () {
       return this.photos.filter(function (photo) {
-        return photo.fields.title == 'intro'
+        return photo.fields.title === 'Feb'
       })
     }
   },

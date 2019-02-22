@@ -5,6 +5,7 @@
     </Hero>
     <Calendrier Month="Février"></Calendrier>
     <Calendrier Month="Mars"></Calendrier>
+    <Calendrier Month="Avril"></Calendrier>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>

@@ -3,7 +3,6 @@
     <Hero class="hero-evenement">
       <div class="text"><h1>Calendrier</h1></div> 
     </Hero>
-    <Calendrier Month="Février"></Calendrier>
     <Calendrier Month="Mars"></Calendrier>
     <Calendrier Month="Avril"></Calendrier>
     <div class="text-group">

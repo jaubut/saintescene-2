@@ -27,7 +27,7 @@
       <div class="texte center">
         <img class="mini-scene" src="../assets/dimanche/mini-scene-logo.png" alt="">
         </br>
-        <p>Pour les enfants de 3 à 5 ans, un temps de louange est dédié pour eux à l'étage.</p>
+        <p>Pour les enfants<br>de 3 à 5 ans, un temps <br>de louange est dédié <br>pour eux à l'étage.</p>
       </div>
       <img src="../assets/dimanche/mini-scene.jpg" alt="">
     </div>

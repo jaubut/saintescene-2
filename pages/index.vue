@@ -3,6 +3,7 @@
     <div class="renaissance">
       <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
     </div>
+    <!--[if lt IE 9]>
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
       <Slide v-for="photo in photos" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
@@ -38,6 +39,7 @@
         <img v-img:group :src="photo.fields.file.url + '?w=800&h=800'" class="photo">
       </div>
     </div>
+    <![endif]-->
   </div>
 </template>
 <script>

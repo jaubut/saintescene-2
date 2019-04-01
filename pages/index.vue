@@ -1,5 +1,8 @@
 <template>
   <div id="Index">
+    <div class="renaissance">
+      <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
+    </div>
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
       <Slide v-for="photo in photos" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
@@ -87,6 +90,21 @@ export default {
 }
 </script>
 <style scoped>
+.renaissance {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(../assets/renaissance/bg.png);
+}
+.renaissance-img {
+  width: 40vw;
+  height: auto;
+}
 #Index {
   width: 100%;
   height: 100%;

@@ -5,6 +5,15 @@
         <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
       </a>
     </div>
+    <div class="tag">
+      <h3>Messages</h3>
+      <p>Voir tous <router-link to="/messages"><span class="link">les messages</span></router-link></p>
+    </div>
+    <div class="message-section">
+      <template v-for="message in messages.slice(0, 1)">
+        <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
+      </template>
+    </div>
     <!--[if lt IE 9]>
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
       <Slide v-for="photo in photos" :key="photo.fields.title">
@@ -23,15 +32,6 @@
                   text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
                   signature="Samuel & Laure Gingras"
     ></BlocMission>
-    <div class="tag">
-      <h3>Messages</h3>
-      <p>Voir tous <router-link to="/messages"><span class="link">les messages</span></router-link></p>
-    </div>
-    <div class="message-section">
-      <template v-for="message in messages.slice(0, 1)">
-        <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
-      </template>
-    </div>
     <div class="tag">
       <h3 class="">Photos</h3>
       <p>Les photos de la semaine.</p>
@@ -96,7 +96,6 @@ export default {
 <style scoped>
 .renaissance {
   z-index: 100;
-  position: fixed;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

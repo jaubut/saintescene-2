@@ -1,7 +1,9 @@
 <template>
   <div id="Index">
     <div class="renaissance">
-      <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
+      <a href="https://www.facebook.com/saintescene/" target="blank">
+        <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
+      </a>
     </div>
     <!--[if lt IE 9]>
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>

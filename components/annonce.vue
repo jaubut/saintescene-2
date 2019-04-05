@@ -35,7 +35,7 @@ export default {
       var app_key = "keyYpAgTFas9oMW80"; // Read Only Key! :D
       this.items = []
       axios.get(
-        "https://api.airtable.com/v0/" + app_id + "/Annonces", {
+        "https://api.airtable.com/v0/" + app_id + "/Annonces-tv", {
           headers: {
             Authorization: "Bearer " + app_key
           }

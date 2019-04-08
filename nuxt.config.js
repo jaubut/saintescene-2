@@ -71,7 +71,10 @@ module.exports = {
     '@nuxtjs/onesignal',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-135615191-1'
+    }]
   ],
   /*
   ** Axios module configuration

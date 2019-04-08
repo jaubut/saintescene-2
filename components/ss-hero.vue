@@ -53,7 +53,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
 }
 .text h1 {
   font-size: 5rem;

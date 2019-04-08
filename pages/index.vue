@@ -1,7 +1,7 @@
 <template>
   <div id="Index">
     <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
-      <Slide v-for="photo in photos" :key="photo.fields.title" v-if="photo.fields.title === 'intro'" >
+      <Slide v-for="photo in photos" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
           <div class="text">
             <img src="~/assets/logo-white.svg" height="250px" class="logo-hero" alt="">
@@ -25,6 +25,11 @@
       <template v-for="message in messages.slice(0, 1)">
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
+    </div>
+    <div class="renaissance">
+      <a href="https://www.facebook.com/saintescene/" target="blank">
+        <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
+      </a>
     </div>
     <div class="tag">
       <h3 class="">Photos</h3>
@@ -53,6 +58,13 @@ export default {
     Carousel,
     Slide
   },
+  computed: {
+    intros: function () {
+      return this.photos.filter(function (photo) {
+        return photo.fields.title === 'Feb'
+      })
+    }
+  },
   asyncData ({ env, params }) {
     return Promise.all([
       client.getEntries({
@@ -80,6 +92,20 @@ export default {
 }
 </script>
 <style scoped>
+.renaissance {
+  z-index: 100;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(../assets/renaissance/bg.png);
+}
+.renaissance-img {
+  width: 40vw;
+  height: auto;
+}
 #Index {
   width: 100%;
   height: 100%;

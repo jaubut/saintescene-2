@@ -59,6 +59,19 @@ export default {
 </script>
 
 <style>
+  .alert {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    height: 30px;
+    width: 100vw;
+  }
+  .alert small {
+    color: white;
+    font-size: 0.9rem;
+  }
   .round-give {
     position: fixed;
     bottom: 0;

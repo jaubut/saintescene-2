@@ -72,7 +72,7 @@ export default {
   height: 100%;
 }
 .hero-evenement {
-  background-image: url(../assets/evenement-bstudy.jpg);
+  background-image: url(../assets/evenement-photo.jpg);
   background-position: top center !important; 
   grid-column: span 2;
 }

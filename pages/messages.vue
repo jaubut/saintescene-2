@@ -40,7 +40,7 @@ export default {
     width: 100%;
   }
   .hero-messages {
-    background-image: url(../assets/sampreche.jpg);
+    background-image: url(../assets/message-photo.jpg);
     background-position: top center !important; 
     grid-column: span 2;
   }

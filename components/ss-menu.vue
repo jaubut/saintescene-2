@@ -6,6 +6,7 @@
       <router-link to="/impliquetoi">Implique-toi</router-link>
       <router-link to="/messages">Messages</router-link>
       <router-link to="/contacts">Fiche Contact</router-link>
+      <router-link to="/dimanche">Première fois</router-link>
     </div>
     <button class="menu-x"><p>x</p></button>
     <div id="menu-svg">

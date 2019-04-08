@@ -11,41 +11,81 @@
       <div class="texte">
         <p class="big-text">9h30 - 10h</p>
         <h3>L'accueil</h3>
-        <p>Il y a du café, de la musique et de la prière dès 9h30.</p>
+        <p>Le café est servi à 9h30. Si c'est votre première visite, nous avons un cadeau pour vous.</p>
       </div>
-      <img src="../assets/dimanche/accueil.jpg" alt="">
+      <img src="../assets/dimanche/therese.jpg" alt="">
     </div>
     <div class="bloc span-2">
       <div class="texte">
         <p class="big-text">10h - 11h</p>
-        <h3>Louange</h3>
-        <p>À chaque semaine, notre équipe de louange nous amène dans l'adoration dans une ambiance chaleureuse et puissante.</p>
+        <h3>Louanges</h3>
+        <p>La scène débute à 10h avec un temps de louange dirigé par notre équipe de musique.</p>
       </div>
       <img src="../assets/dimanche/louange.jpg" alt="">
-    </div>
-    <div class="bloc span-2 row">
-      <div class="texte center">
-        <img class="mini-scene" src="../assets/dimanche/mini-scene-logo.png" alt="">
-        <br>
-        <p>Pour les enfants<br>de 3 à 5 ans, un temps <br>de louange est dédié <br>pour eux à l'étage.</p>
-      </div>
-      <img src="../assets/dimanche/mini-scene.jpg" alt="">
     </div>
     <div class="bloc span-2 grey row">
       <img src="../assets/dimanche/message.png" alt="">
       <div class="texte">
         <p class="big-text">11h - 12h</p>
         <h3>Message</h3>
-        <p>Suivant la louange, nous sommes encouragé par un message puisé dans la parole de Dieu et sa révélation encore tellement actuel pour nous aujourd'hui.</p>
+        <p>Après le temps de louange un message encourageant et édifiant est apporté.</p>
       </div>
     </div>
     <div class="bloc span-2 row">
       <div class="texte">
         <p class="big-text">11h - 12h</p>
-        <h3>Sainte Scène Junior</h3>
-        <p>Pour tous les jeunes de l'âge primaire, nous avons des classes avec des activitées spécialement préparé pour eux !</p>
+        <h3>Switch</h3>
+        <p>Jeunesse de 13 - 17 local au deuxième après la louange.</p>
       </div>
+      <img src="../assets/dimanche/switch.jpg" alt="">
+    </div>
+    <div class="bloc span-2 row grey">
+      <img src="../assets/dimanche/miniscene.jpg" alt="">
+      <div class="texte center">
+        <img class="mini-scene" src="../assets/dimanche/mini-scene-logo.png" alt="">
+        <br>
+        <p>La miniscène est la louange pour les enfants de 2-5 ans à partir de 9h55. Les enfants peuvent chanter, danser et faire plein d’activités. Par la suite, ils seront amenés vers leurs classes respectives ainsi vous pourrez profiter de toute la réunion et vos enfants aussi.</p>
+      </div>
+    </div>
+    <div class="bloc span-2 row">
+      <div class="texte">
+        <p class="big-text">11h - 12h</p>
+        <h3>Club des parents</h3>
+        <p>Ce local est disponible pour les parents avec jeunes enfants qui ne se sentent pas prêts à intégrer les poussaints. Le message est aussi disponible dans le club des parents.</p>
+      </div>
+      <img src="../assets/dimanche/clubparent.jpg" alt="">
+    </div>
+    <div class="bloc span-2 row grey">
       <img src="../assets/dimanche/classe-garderie.jpg" alt="">
+      <div class="texte">
+        <p class="big-text">11h - 12h</p>
+        <h3>les poussaints</h3>
+        <p>La pouponnière est ouverte après la louange pour les bébés de 0-2 ans avec des monitrices attentionnées.</p>
+      </div>
+    </div>
+    <div class="bloc span-2">
+      <div class="texte">
+        <p class="big-text">11h - 12h</p>
+        <h3>Salle d’allaitement</h3>
+        <p>Nous avons une salle d’allaitement disponible pour toutes les mamans qui allaitent ou donnent le biberon.</p>
+      </div>
+      <img src="../assets/dimanche/allaitement.jpg" alt="">
+    </div>
+    <div class="bloc span-2 row grey">
+      <div class="texte">
+        <p class="big-text">11h - 12h</p>
+        <h3>Sainte Scène jr.</h3>
+        <p>Les enfants de 3 à 11 ans participent à une activité amusante adaptée pour leurs âges, dans leurs classes respectives.</p>
+      </div>
+      <img src="../assets/dimanche/classe-kid.jpg" alt="">
+    </div>
+    <div class="bloc span-2 row">
+      <img src="../assets/dimanche/abientot.jpg" alt="">
+      <div class="texte">
+        <p class="big-text">11h - 12h</p>
+        <h3>À bientôt</h3>
+        <p>Nous avons une salle d’allaitement disponible pour toutes les mamans qui allaitent ou donnent  le biberon.</p>
+      </div>
     </div>
   </div>
 </template>

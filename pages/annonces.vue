@@ -2,6 +2,7 @@
   <div id="evenement">
     <Annonce Month="Mars"></Annonce>
     <Annonce Month="Avril"></Annonce>
+    <Annonce Month="Mai"></Annonce>
   </div>
 </template>
 <script>

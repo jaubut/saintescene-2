@@ -84,7 +84,7 @@
       <div class="texte">
         <p class="big-text">11h - 12h</p>
         <h3>À bientôt</h3>
-        <p>Nous avons une salle d’allaitement disponible pour toutes les mamans qui allaitent ou donnent  le biberon.</p>
+        <p>Si vous avez des questions ou autres besoins, n’hésitez pas de communiquer avec notre super équipe de bénévoles.</p>
       </div>
     </div>
   </div>

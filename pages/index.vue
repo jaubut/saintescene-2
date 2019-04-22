@@ -1,6 +1,6 @@
 <template>
   <div id="Index">
-    <Carousel :per-page="1" :navigate-to="0" :autoplay=true :loop=true :paginationEnabled=false>
+    <Carousel :per-page="1" :navigate-to="0" :autoplay=false :loop=true :paginationEnabled=false>
       <Slide v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
           <div class="text">

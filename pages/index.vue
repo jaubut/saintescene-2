@@ -26,11 +26,6 @@
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
-    <div class="renaissance">
-      <a href="https://www.facebook.com/saintescene/" target="blank">
-        <img class="renaissance-img" src="../assets/renaissance/profil.png" alt="">
-      </a>
-    </div>
     <div class="tag">
       <h3 class="">Photos</h3>
       <p>Les photos de la semaine.</p>

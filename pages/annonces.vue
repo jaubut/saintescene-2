@@ -1,6 +1,5 @@
 <template>
   <div id="evenement">
-    <Annonce Month="Mai"></Annonce>
     <Annonce Month="Juin"></Annonce>
     <Annonce Month="Juillet"></Annonce>
   </div>
@@ -43,30 +42,7 @@ export default {
 <style scoped>
 #evenement {
   width: 100%;
-  height: 100%;
-}
-.hero-evenement {
-  background-image: url(../assets/evenement-bstudy.jpg);
-  background-position: top center !important; 
-  grid-column: span 2;
-}
-.picture {
-  grid-area: 1/2/2/4;
-  display: flex;
-  height: 75px;
-  width: 75px;
-  border-radius: 100%;
-  background: #B2152D;
-  border: 3px solid #FA7E7E;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-.picture p {
-  text-align: center;
-  color: white;
-  font-size: 0.9rem;
+  height: 100vh;
 }
 
 .line {
@@ -113,31 +89,5 @@ export default {
 }
 .text h1 {
   font-family: 'Barlow', sans-serif;
-}
-.separator {
-  height: 1px;
-  background: #fafbfc;
-  width: 70%;
-}
-.hero-event {
-  background-image: url(../assets/evenement-bstudy.jpg);
-}
-.intercession {
-  background-image: url(../assets/intercession.jpg);
-}
-.compassion {
-  background-image: url(https://images.unsplash.com/photo-1513640127641-49ba81f8305c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7aa96678613e152a1fa0df75bf390160&auto=format&fit=crop&w=750&q=80);
-}
-.campus {
-  background-image: url(../assets/campus.jpg);
-}
-.chandail {
-  background-image: url(../assets/chandail.jpg);
-}
-.dejeuner {
-  background-image: url(https://images.unsplash.com/photo-1493807742375-fbc46d996e8f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6f0038573a81b1169576b6674a3ce202&auto=format&fit=crop&w=476&q=80);
-}
-.phone-number {
-  color: #FA7E7E;
 }
 </style>

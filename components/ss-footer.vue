@@ -49,7 +49,7 @@ export default {
 </script>
 <style scoped>
   #Footer {
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template: 5% 65% 20%/5% 45% 45% 5%;
   padding: 10% 0 0 0;
@@ -122,16 +122,15 @@ export default {
   font-size: 0.9rem;
 }
 .footer-right {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  grid-area: 3/2/4/4;
-  margin-top: 35px;
+  align-self: end;
+  grid-area: 3/2/4/3;
+  margin-right: auto;
 }
 .footer-right p {
   font-family: "Barlow", sans-serif;
   align-self: center;
   font-size: 0.6rem;
   color: white;
+  line-height: inherit;
 }
 </style>

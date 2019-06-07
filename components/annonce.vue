@@ -19,7 +19,8 @@ export default {
   data() {
     return {
       items: [],
-      thisMonth: this.Month
+      thisMonth: this.Month,
+      isHidden: false
     }
   },
   computed: {
@@ -57,8 +58,7 @@ export default {
 .calendrier {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
-  margin: 100px 50px;
+  justify-content: center;
 }
 .calendrier h3 {
   font-size: 3rem;
@@ -66,10 +66,9 @@ export default {
 }
 .calendrier .annonces {
   display: flex;
-	flex-flow: column nowrap;
-	height: 35vh;
-	width: 40vw;
-  padding-left: 50px; 
+	flex-flow: column wrap;
+	width: auto;
+  padding: 50px;
 }
 .calendrier .titre {
   font-family: 'Barlow', sans-serif;
@@ -86,13 +85,15 @@ export default {
   font-size: 1rem;
   padding-left: 15px;
   max-width: 850px;
-	font-weight: 800;
+	font-weight: bolder;
+  color: blue;
 }
 .calendrier .jour {
   font-family: 'Barlow', sans-serif;
   font-weight: 800;
   font-size: 2rem;
   padding-right: 15px;
+  color: blue;
 }
 </style>
 

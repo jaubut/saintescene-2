@@ -52,7 +52,7 @@ export default {
   height: 100%;
   display: grid;
   grid-template: 5% 65% 20%/5% 45% 45% 5%;
-  padding: 10% 0;
+  padding: 10% 0 0 0;
 }
 .social {
   grid-area: 1/2/2/4;
@@ -126,7 +126,7 @@ export default {
   flex-flow: row wrap;
   justify-content: space-between;
   grid-area: 3/2/4/4;
-  margin-bottom: 15px;
+  margin-top: 35px;
 }
 .footer-right p {
   font-family: "Barlow", sans-serif;

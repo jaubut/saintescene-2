@@ -59,13 +59,14 @@ export default {
   flex-flow: column wrap;
   justify-content: flex-start;
   margin: 100px 50px;
+  height: 100%;
 }
 .calendrier h3 {
   font-size: 3rem;
   padding-bottom: 25px;
 }
 .calendrier .annonces {
-  padding-left: 50px; 
+  margin: 50px; 
 }
 .calendrier .titre {
   font-family: 'Barlow', sans-serif;

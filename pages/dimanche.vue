@@ -34,10 +34,10 @@
     <div class="bloc span-2 row">
       <div class="texte">
         <p class="big-text">11h - 12h</p>
-        <h3>Switch</h3>
-        <p>Jeunesse de 13 - 17 local au deuxième après la louange.</p>
+        <h3>Club des parents</h3>
+        <p>Ce local est disponible pour les parents avec jeunes enfants qui ne se sentent pas prêts à intégrer les poussaints. Le message est aussi disponible dans le club des parents.</p>
       </div>
-      <img src="../assets/dimanche/switch.jpg" alt="">
+      <img src="../assets/dimanche/clubparent.jpg" alt="">
     </div>
     <div class="bloc span-2 row grey">
       <img src="../assets/dimanche/miniscene.jpg" alt="">
@@ -46,14 +46,6 @@
         <br>
         <p>La miniscène est la louange pour les enfants de 2-5 ans à partir de 9h55. Les enfants peuvent chanter, danser et faire plein d’activités. Par la suite, ils seront amenés vers leurs classes respectives ainsi vous pourrez profiter de toute la réunion et vos enfants aussi.</p>
       </div>
-    </div>
-    <div class="bloc span-2 row">
-      <div class="texte">
-        <p class="big-text">11h - 12h</p>
-        <h3>Club des parents</h3>
-        <p>Ce local est disponible pour les parents avec jeunes enfants qui ne se sentent pas prêts à intégrer les poussaints. Le message est aussi disponible dans le club des parents.</p>
-      </div>
-      <img src="../assets/dimanche/clubparent.jpg" alt="">
     </div>
     <div class="bloc span-2 row grey">
       <img src="../assets/dimanche/classe-garderie.jpg" alt="">
@@ -77,7 +69,7 @@
         <h3>Sainte Scène jr.</h3>
         <p>Les enfants de 3 à 11 ans participent à une activité amusante adaptée pour leurs âges, dans leurs classes respectives.</p>
       </div>
-      <img src="../assets/dimanche/classe-kid.jpg" alt="">
+      <img src="../assets/dimanche/accueil.jpg" alt="">
     </div>
     <div class="bloc span-2 row">
       <img src="../assets/dimanche/abientot.jpg" alt="">

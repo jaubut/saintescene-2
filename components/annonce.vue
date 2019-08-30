@@ -69,6 +69,7 @@ export default {
 	flex-flow: column wrap;
 	width: auto;
   padding: 50px;
+  margin-bottom: 50px;
 }
 .calendrier .titre {
   font-family: 'Barlow', sans-serif;

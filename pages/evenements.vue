@@ -4,6 +4,7 @@
       <div class="text"><h1>Calendrier</h1></div> 
     </Hero>
     <Calendrier Month="Septembre"></Calendrier>
+    <Calendrier Month="Octobre"></Calendrier>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>

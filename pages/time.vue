@@ -144,7 +144,7 @@ export default {
 }
 .timer {
   font-weight: 800;
-  font-size: 20rem;
+  font-size: 15rem;
   font-family: "Barlow", sans-serif;
   color: red;
 }

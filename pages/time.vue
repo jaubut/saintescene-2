@@ -33,8 +33,26 @@
             <i class="fas fa-undo"></i>
         </button>
       </div>
+      <input v-model="totalTime" type="text">
     </div>
-    <input v-model="totalTime" type="text">
+    <div class="container-row">
+      <h1>allo</h1>
+      <h1>bye</h1>
+      <h1>allo</h1>
+      <h1>aurevoir</h1>
+    </div>
+    <div class="container-column">
+      <h1>allo</h1>
+      <h1>bye</h1>
+      <h1>allo</h1>
+      <h1>aurevoir</h1>
+    </div>
+    <div class="container-row">
+      <h1>allo</h1>
+      <h1>bye</h1>
+      <h1>allo</h1>
+      <h1>aurevoir</h1>
+    </div>
     <h1 class="time-h1">{{ h }}:{{ m }}:{{ s }}</h1>
   </div>
 </template>
@@ -115,7 +133,7 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: black;
   justify-content: center;
   align-items: center;
@@ -129,5 +147,22 @@ export default {
   font-size: 20rem;
   font-family: "Barlow", sans-serif;
   color: red;
+}
+.container {
+  width: 100%;
+}
+.container-column {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 </style>

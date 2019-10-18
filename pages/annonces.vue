@@ -1,7 +1,7 @@
 <template>
   <div id="evenement">
-    <Annonce Month="Septembre"></Annonce>
     <Annonce Month="Octobre"></Annonce>
+    <Annonce Month="Novembre"></Annonce>
   </div>
 </template>
 <script>

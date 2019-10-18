@@ -3,21 +3,21 @@
     <Hero class="hero-evenement">
       <div class="text"><h1>Calendrier</h1></div> 
     </Hero>
-    <Calendrier Month="Septembre"></Calendrier>
     <Calendrier Month="Octobre"></Calendrier>
+    <Calendrier Month="Novembre"></Calendrier>
     <div class="text-group">
       <h2 @click="dimanche =! dimanche">Dimanche</h2>
       <div class="separator"></div>
       <transition name="fade">
         <div class="text-desc" v-if="dimanche">
-          <p>Notre communauté Sainte Scène a son rassemblement principal à Granby, le dimanche matin à <strong>10h au 1236 rue St-Charles S</strong> et <strong>1 fois par mois au 164 Rue Cowie local 217 à 19h.</strong><br/> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une <strong>Sainte Scène</strong> pour toutes les générations, les familles, les célibataires, les ados et les enfants. Tous sont les bienvenus ! Nous sommes en communion tous les dimanches à 10h.  Fais partie de la <strong>Sainte Scène</strong>.<br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>Lieu de rencontre: <br>1236 rue St-Charles S. <br>164 Rue Cowie local 217</p></a></p>
+          <p>Notre communauté Sainte Scène a son rassemblement principal à Granby, le dimanche matin à <strong>10h au 1236 rue St-Charles S.</strong> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une <strong>Sainte Scène</strong> pour toutes les générations, les familles, les célibataires, les ados et les enfants. Tous sont les bienvenus ! Nous sommes en communion tous les dimanches à 10h.  Fais partie de la <strong>Sainte Scène</strong>.<br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>Lieu de rencontre: 1236 rue St-Charles S.</p></a></p>
           <p>Texte  <span><button class="button-notif">DIMANCHE</button></span> au <a href="sms:1-226-212-4477"><span class="phone-number">+1 226 212 4477</span></a> pour recevoir toutes les notifs en liens avec le Dimanche.</p>
         </div>
       </transition>
       <h2 @click="intercession =! intercession">Réveil Sainte Scène</h2>
       <transition name="fade">
         <div class="text-desc" v-if="intercession">
-          <p>Le groupe d’Intercession est la première lumière allumée dans les coulisses de <strong>Sainte Scène</strong> chaque <strong>mercredi, vendredi et dimanche matin de 8h00 à 9h30</strong>. Fais partie de l’équipe de prière qui se rencontre pour intercéder les uns pour les autres, pour notre communauté, notre ville, notre région, notre province et notre nation. La prière active tout !<br/><a href="https://goo.gl/maps/ATv8oSgHqLD2" target="_blank"><p>Lieu de rencontre: 164 rue Cowie, local 217</p></a></p>
+          <p>Le groupe d’Intercession est la première lumière allumée dans les coulisses de <strong>Sainte Scène</strong> chaque <strong>mercredi et vendredi matin de 8h30 à 9h30</strong>. Fais partie de l’équipe de prière qui se rencontre pour intercéder les uns pour les autres, pour notre communauté, notre ville, notre région, notre province et notre nation. La prière active tout!<br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>Lieu de rencontre: 1236 rue St-Charles S.</p></a></p>
           <p>Texte  <span><button class="button-notif">INTERCESSION</button></span> au <a href="sms:1-226-212-4477"><span class="phone-number">+1 226 212 4477</span></a> pour recevoir toutes les notifs en liens avec l'Intercession.</p>
         </div>
       </transition>

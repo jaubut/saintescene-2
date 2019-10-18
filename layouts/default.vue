@@ -19,6 +19,9 @@
         <transition name="fade">
           <a v-if="toggle" href="https://www.canadahelps.org/fr/dn/35836" target="blank"><button class="button-notif round-give-3">Cana don</button></a>
         </transition>
+        <transition name="fade">
+          <a v-if="toggle" href="https://www.canadahelps.org/fr/dn/35836" target="blank"><button class="button-notif round-give-4">e-Interact</button></a>
+        </transition>
       </main>
     </transition>
     <ssFooter v-if="$route.path !== ['/jesus','/annonces']"/>
@@ -91,6 +94,13 @@ export default {
     right: 0;
     margin-right: 25px;
     margin-bottom: 175px;
+  }
+  .round-give-4 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-bottom: 250px;
   }
   .annonce {
     margin: auto;

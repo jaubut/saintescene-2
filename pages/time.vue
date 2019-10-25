@@ -1,7 +1,7 @@
 <template>
   <div class="time-container">
     <div class="container has-text-centered">      
-      <div class="timer" id="timer">
+      <div class="timer" :style="'color:' + textColor + ';'" id="timer">
         <span id="minutes">{{ minutes }}</span>
         <span id="middle">:</span>
         <span id="seconds">{{ seconds }}</span>
@@ -33,25 +33,7 @@
             <i class="fas fa-undo"></i>
         </button>
       </div>
-      <input v-model="totalTime" type="text">
-    </div>
-    <div class="container-row">
-      <h1>allo</h1>
-      <h1>bye</h1>
-      <h1>allo</h1>
-      <h1>aurevoir</h1>
-    </div>
-    <div class="container-column">
-      <h1>allo</h1>
-      <h1>bye</h1>
-      <h1>allo</h1>
-      <h1>aurevoir</h1>
-    </div>
-    <div class="container-row">
-      <h1>allo</h1>
-      <h1>bye</h1>
-      <h1>allo</h1>
-      <h1>aurevoir</h1>
+      <input class="input-timer" v-model="totalTime" type="text">
     </div>
     <h1 class="time-h1">{{ h }}:{{ m }}:{{ s }}</h1>
   </div>
@@ -68,6 +50,7 @@ export default {
       time: '00:00:00.000',
       timer: null,
       totalTime: (30 * 60),
+      textColor: 'yellow',
       resetButton: false
     }
   },
@@ -106,9 +89,10 @@ export default {
     countdown: function() {
       if(this.totalTime >= 1){
         this.totalTime--;
-      } else{
+        this.textcolor();
+      } else {
         this.totalTime = 0;
-        this.resetTimer()
+        this.resetTimer();
       }
     }
   },  
@@ -123,6 +107,11 @@ export default {
     seconds: function() {
       const seconds = this.totalTime - (this.minutes * 60);
       return this.padTime(seconds);
+    },
+    textcolor: function() {
+      if(this.totalTime <= 300) {
+        return this.textColor = 'red'
+      }
     }
   }
 }
@@ -133,7 +122,7 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background: black;
   justify-content: center;
   align-items: center;
@@ -146,7 +135,6 @@ export default {
   font-weight: 800;
   font-size: 15rem;
   font-family: "Barlow", sans-serif;
-  color: red;
 }
 .container {
   width: 100%;
@@ -164,5 +152,11 @@ export default {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+}
+.input-timer {
+  margin: 0.75rem;
+  border: 0;
+  height: 1rem;
+  border-radius: 3px;
 }
 </style>

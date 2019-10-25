@@ -69,6 +69,7 @@ export default {
       this.timer = setInterval(() => this.countdown(), 1000);
       this.resetButton = true;
       this.title = "Greatness is within sight!!"
+      this.textColor = 'yellow'
     },
     stopTimer: function() {
       clearInterval(this.timer);
@@ -77,11 +78,11 @@ export default {
       this.title = "Never quit, keep going!!"
     },
     resetTimer: function() {
-      this.totalTime = (30 * 60);
+      this.totalTime = (5 * 60);
       clearInterval(this.timer);
-      this.timer = null;
-      this.resetButton = false;
-      this.title = "Let the countdown begin!!"
+      this.timer = setInterval(() => this.countdown(), 1000);
+      this.resetButton = true;
+      this.textColor = 'red';
     },
     padTime: function(time) {
       return (time < 10 ? '0' : '') + time;
@@ -89,7 +90,6 @@ export default {
     countdown: function() {
       if(this.totalTime >= 1){
         this.totalTime--;
-        this.textcolor();
       } else {
         this.totalTime = 0;
         this.resetTimer();
@@ -107,11 +107,6 @@ export default {
     seconds: function() {
       const seconds = this.totalTime - (this.minutes * 60);
       return this.padTime(seconds);
-    },
-    textcolor: function() {
-      if(this.totalTime <= 300) {
-        return this.textColor = 'red'
-      }
     }
   }
 }

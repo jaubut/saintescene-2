@@ -1,22 +1,22 @@
 <template>
   <div id="Index">
-    <div class="sean-event">
-      <a class="button-notif" href="https://www.eventbrite.ca/e/billets-reveil-sainte-scene-avec-sean-feucht-en-partenariat-avec-voice-of-revival-72605502011?fbclid=IwAR2v10b2JR0umx_hunYlPSzup4UiU43OeJKvJV_tOeP2QYSEDhmPXQxcxlc" target="_blank">billet gratuit</a>
-    </div>
-    <!-- comment 
-      <Carousel :per-page="1" :navigate-to="0" :speed=1500 :autoplay=true :loop=true :paginationEnabled=false>
-        <Slide v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
-          <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
-            <div class="text">
-              <img src="~/assets/logo-white.svg" height="250px" class="logo-hero" alt="">
-              <div @click="scrollMeTo('first-page')" class="arrow">
-                <i class="fas fa-angle-down"></i>
-              </div>
-            </div>
-          </Hero>
-        </Slide>
-      </Carousel>
+    <!-- comment
+      <div class="sean-event">
+        <a class="button-notif" href="https://www.eventbrite.ca/e/billets-reveil-sainte-scene-avec-sean-feucht-en-partenariat-avec-voice-of-revival-72605502011?fbclid=IwAR2v10b2JR0umx_hunYlPSzup4UiU43OeJKvJV_tOeP2QYSEDhmPXQxcxlc" target="_blank">billet gratuit</a>
+      </div>
     -->
+    <Carousel :per-page="1" :navigate-to="0" :speed=1500 :autoplay=true :loop=true :paginationEnabled=false>
+      <Slide v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
+        <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
+          <div class="text">
+            <img src="~/assets/logo-white.svg" height="250px" class="logo-hero" alt="">
+            <div @click="scrollMeTo('first-page')" class="arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+          </div>
+        </Hero>
+      </Slide>
+    </Carousel>
     <iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
     <BlocMission  title="Notre Mission"
                   text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."

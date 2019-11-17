@@ -1,6 +1,6 @@
 <template>
   <div class="time-container">
-    <div class="container has-text-centered">      
+    <div class="has-text-centered">      
       <div class="timer" :style="'color:' + textColor + ';'" id="timer">
         <span id="minutes">{{ minutes }}</span>
         <span id="middle">:</span>
@@ -115,7 +115,7 @@ export default {
 <style scoped>
 .time-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   width: 100vw;
   height: 100vh;
   background: black;
@@ -124,7 +124,8 @@ export default {
 }
 .time-h1 {
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 10rem;
+  padding-left: 100px;
 }
 .timer {
   font-weight: 800;

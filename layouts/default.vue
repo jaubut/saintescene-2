@@ -9,6 +9,9 @@
     <transition name="fade">
       <ssMenu v-on-click-outside="close" @click.native="show = false" v-if="show"></ssMenu>
     </transition>
+    <transition name="fade">
+      <ssEtransfer v-on-click-outside="close" @click.native="showtransfer = false" v-if="showtransfer"></ssEtransfer>
+    </transition>
     <transition name="transite">
       <main @click="show = false">
         <router-view></router-view>
@@ -20,7 +23,7 @@
           <a v-if="toggle" href="https://www.canadahelps.org/fr/dn/35836" target="blank"><button class="button-notif round-give-3">Cana don</button></a>
         </transition>
         <transition name="fade">
-          <a v-if="toggle" href="https://www.canadahelps.org/fr/dn/35836" target="blank"><button class="button-notif round-give-4">e-Interact</button></a>
+          <a v-if="toggle" @click="triggerE" target="blank"><button class="button-notif round-give-4">e-Interact</button></a>
         </transition>
       </main>
     </transition>
@@ -31,12 +34,14 @@
 <script>
 import ssFooter from '@/components/ss-footer'
 import ssMenu from '@/components/ss-menu'
+import ssEtransfer from '@/components/etransfer'
 
 export default {
   name: 'app',
   components: {
     ssFooter,
-    ssMenu
+    ssMenu,
+    ssEtransfer
   },
   head () {
     return {
@@ -47,7 +52,8 @@ export default {
   data () {
     return {
       show: false,
-      toggle: false
+      toggle: false,
+      showtransfer: false
     }
   },
   methods: {
@@ -56,6 +62,12 @@ export default {
     },
     close () {
       this.show = false
+    },
+    triggerE () {
+      this.showtransfer = !this.showtransfer
+    },
+    closeE () {
+      this.showtransfer = false
     }
   }
 }

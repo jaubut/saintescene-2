@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="alert">
+      <small>Nouveau site en développement. Stay tuned.</small>
+    </div>
     <header>
       <router-link to="/">
         <h1 class="logo">Sainte Scène</h1>
@@ -81,12 +84,17 @@ export default {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background: red;
+    background: linear-gradient(150deg, #ff0000, #d7ff00, #ff00a7, #00e6ff);
+    background-size: 800% 800%;
+    -webkit-animation: alertgradient 17s ease infinite;
+    -moz-animation: alertgradient 17s ease infinite;
+    animation: alertgradient 17s ease infinite;
     height: 30px;
     width: 100vw;
   }
   .alert small {
-    color: white;
+    color: black;
+    font-family: "Germania One", cursive;;
     font-size: 0.9rem;
   }
   .round-give {
@@ -139,5 +147,20 @@ export default {
   .menu p {
     color: black;
     line-height: 1.2rem;
+  }
+  @-webkit-keyframes alertgradient {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+  }
+  @-moz-keyframes alertgradient {
+      0%{background-position:0% 13%}
+      50%{background-position:100% 88%}
+      100%{background-position:0% 13%}
+  }
+  @keyframes alertgradient {
+      0%{background-position:0% 13%}
+      50%{background-position:100% 88%}
+      100%{background-position:0% 13%}
   }
 </style>

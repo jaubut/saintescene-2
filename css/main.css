@@ -14,8 +14,6 @@ html, body {
     color: inherit;
   }
   header {
-    position: absolute;
-    top: 0;
     width: calc(100vw - 30px);
     z-index: 1;
     height: 50px;
@@ -24,6 +22,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    background: white;
   }
   header .logo {
     font-family: "Germania One", cursive;

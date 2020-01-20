@@ -15,7 +15,9 @@
     <transition name="transite">
       <main @click="show = false">
         <router-view></router-view>
+        <!-- comments
         <button @click="toggle =! toggle" class="button-notif round-give">Donnez ici</button>
+        -->
         <transition name="fade">
           <a v-if="toggle" href="https://paypal.me/saintescene" target="blank"><button class="button-notif round-give-2">PayPal</button></a>
         </transition>
@@ -122,11 +124,11 @@ export default {
   .menu {
     width: 75px;
     height: 30px;
-    border-color: white;
+    border-color: black;
     border-width: 2px;
     border-radius: 100px;
     background: none;
-    color: white;
+    color: black;
     text-align: center;
     cursor: pointer;
     display: flex;
@@ -135,7 +137,7 @@ export default {
     align-items: center;
   }
   .menu p {
-    color: white;
+    color: black;
     line-height: 1.2rem;
   }
 </style>

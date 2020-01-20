@@ -16,8 +16,7 @@
     <div class="text-group">
       <div class="text">
         <h3>Nous rejoindre</h3>
-        <a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p><strong>Campus Saint-Charles:</strong> <br>1236, rue Saint-Charles Sud Granby, Qc, J2J 0L6</p></a>
-        <a href="https://www.google.ca/maps/dir/''/Grandel+Design/data=!4m5!4m4!1m0!1m2!1m1!1s0x4cc9ce4811c8cfd7:0x645405085cf857e6?sa=X&ved=0ahUKEwi6mr7QnZrcAhVSdt8KHX9iBAIQ9RcIiwEwEA" target="_blank"><p><strong>Campus Cowie (en semaine seulement):</strong> <br>164 Rue Cowie local 217, Granby, QC J2G 3V5</p></a>
+        <a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>1236, rue Saint-Charles Sud Granby, Qc, J2J 0L6</p></a>
         <a href="tel:4503611838"><p>450-361-1838</p></a>
         <a href="mailto:allo@saintescene.com"><p>allo@saintescene.com</p></a>
       </div>
@@ -30,7 +29,7 @@
         </div>
       </router-link>
     </div>
-    <img class="footer-coupe" src="~/assets/logo-coupe-rose.svg" alt="logo coupe rose">
+    <img class="footer-coupe" src="../assets/logo-coupe-black.svg" alt="logo coupe rose">
     <div class="footer-right">
       <p>© 2018 sainte Scène <br>All rights reserved. <br>Crafted by <a href="" target="_blank"><span>Jérémie Aubut</span></a></p>
     </div>
@@ -73,7 +72,7 @@ export default {
 .line {
   grid-area: 1/2/2/4;
   width: 100%;
-  border-top: 4.5px solid #F8C3C8;
+  border-top: 4.5px solid black;
 }
 .footer-logo {
   grid-area: 2/2/3/4;
@@ -87,6 +86,7 @@ export default {
   height: 42px;
   align-self: end;
   margin-left: auto;
+  fill: black;
 }
 .text-group {
   grid-area: 2/2/3/4;
@@ -104,13 +104,13 @@ export default {
 .text {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-top: 50px;
 }
 .text p {
   margin: 15px;
-  color: white;
+  color: black;
   font-size: 0.9rem;
 }
 .text h3 {
@@ -118,7 +118,7 @@ export default {
   font-weight: 100;
 }
 .text .info {
-  color: #F8C3C8;
+  color: black;
   font-size: 0.9rem;
 }
 .footer-right {
@@ -130,7 +130,7 @@ export default {
   font-family: "Barlow", sans-serif;
   align-self: center;
   font-size: 0.6rem;
-  color: white;
+  color: black;
   line-height: inherit;
 }
 </style>

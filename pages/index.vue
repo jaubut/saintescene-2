@@ -4,7 +4,7 @@
       <div class="sean-event">
         <a class="button-notif" href="https://www.eventbrite.ca/e/billets-reveil-sainte-scene-avec-sean-feucht-en-partenariat-avec-voice-of-revival-72605502011?fbclid=IwAR2v10b2JR0umx_hunYlPSzup4UiU43OeJKvJV_tOeP2QYSEDhmPXQxcxlc" target="_blank">billet gratuit</a>
       </div>
-    -->
+    
     <Carousel :per-page="1" :navigate-to="0" :speed=1500 :autoplay=true :loop=true :paginationEnabled=false>
       <Slide v-for="photo in photos.slice(0, 20)" :key="photo.fields.title">
         <Hero class="accueil" :style="{'background-image': 'url(' + photo.fields.file.url + '?w=1200&h=1200' + ')'}">
@@ -17,20 +17,17 @@
         </Hero>
       </Slide>
     </Carousel>
-    <iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
-    <BlocMission  title="Notre Mission"
-                  text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
-                  signature="Samuel & Laure Gingras"
-    ></BlocMission>
-    <div class="tag">
-      <h3>Messages</h3>
-      <p>Voir tous <router-link to="/messages"><span class="link">les messages</span></router-link></p>
-    </div>
+    -->
     <div class="message-section">
       <template v-for="message in messages.slice(0, 1)">
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
+    <iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
+    <BlocMission  title="Notre Mission"
+                  text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
+                  signature="Samuel & Laure Gingras"
+    ></BlocMission>
     <div class="tag">
       <h3 class="">Photos</h3>
       <p>Les photos de la semaine.</p>
@@ -135,7 +132,7 @@ export default {
   grid-auto-rows: auto;
   grid-gap: 10px;
   height: 100%;
-  padding: 0 5% 3% 3%;
+  padding: 5%;
 }
 
 .tag {

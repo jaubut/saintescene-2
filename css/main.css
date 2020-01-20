@@ -1,9 +1,9 @@
 html, body {
-    background: #A50E2F;
+    background: #F8F8F8;
     background-size: 100% 100%;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     animation: bgAnim 4s ease infinite;
   }
   a {

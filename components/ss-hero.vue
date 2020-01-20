@@ -37,9 +37,6 @@ export default {
 .hero .black {
   color: black;
 }
-.full {
-  background: #847e6c !important;
-}
 .full p {
   color: black !important;
   padding: 50px 20%;

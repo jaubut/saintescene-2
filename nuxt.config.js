@@ -42,7 +42,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vuecarousel.js', '~/plugins/vueclickoutside.js', '~/plugins/contentful.js', '~/plugins/component-hero.js', '~/plugins/v-img.js'
+    '~/plugins/vuecarousel.js', '~/plugins/vueclickoutside.js', '~/plugins/contentful.js', '~/plugins/component-hero.js', '~/plugins/v-img.js', '~/plugins/vue-instagram.js'
   ],
   sitemap: {
     path: '/sitemap.xml',

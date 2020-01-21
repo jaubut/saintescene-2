@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="alert">
-      <small>Nouveau site en développement. Stay tuned.</small>
+      <small>Nouveau site en développement.</small>
     </div>
     <header>
       <router-link to="/">

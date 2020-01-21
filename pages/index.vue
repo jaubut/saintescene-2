@@ -28,6 +28,17 @@
                   text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
                   signature="Samuel & Laure Gingras"
     ></BlocMission>
+    <div class="photo-section">
+      <vue-instagram token="5476375392.1677ed0.75a8cbb5db614cd394de7a8aa5fe5bee" :count="9" mediaType="image">
+        <template v-slot:loading="props">
+          <h1 v-if="props.loading" class="fancy-loading">Loading, please wait...</h1>
+        </template>
+        <template v-slot:feeds="props">
+          <a target="_blank" :href="props.feed.link"><img class="photo" :src="props.feed.images.standard_resolution.url" alt=""></a>
+        </template>
+      </vue-instagram>
+    </div>
+    <!-- comments
     <div class="tag">
       <h3 class="">Photos</h3>
       <p>Les photos de la semaine.</p>
@@ -37,6 +48,7 @@
         <img v-img:group :src="photo.fields.file.url + '?w=800&h=800'" class="photo">
       </div>
     </div>
+    -->
   </div>
 </template>
 <script>
@@ -44,6 +56,7 @@ import { Carousel, Slide } from 'vue-carousel'
 import {createClient} from '@/plugins/contentful'
 import BlocMission from '@/components/ss-bloc-mission'
 import BlocMessage from '@/components/ss-bloc-message-index'
+import VueInstagram from 'vue-instagram'
 
 const client = createClient()
 
@@ -53,7 +66,8 @@ export default {
     BlocMission,
     BlocMessage,
     Carousel,
-    Slide
+    Slide,
+    VueInstagram
   },
   computed: {
     intros: function () {
@@ -179,7 +193,8 @@ export default {
 }
 .photo {
   width: auto; 
-  height: 100%; 
+  height: 15vh; 
+  margin: .5vw;
 }
 .photo-section {
   display: flex;
@@ -195,8 +210,6 @@ export default {
 }
 .photo-section div { 
   flex: auto; 
-  height: 30vh; 
-  margin: .5vw; 
 }
 .styles__episodeContainerInner___GWTzW {
   background: white;

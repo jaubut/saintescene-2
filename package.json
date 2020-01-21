@@ -21,6 +21,7 @@
     "nuxt": "^2.10.2",
     "v-img": "^0.2.0",
     "vue-carousel": "^0.14.0",
+    "vue-instagram": "^3.0.0",
     "vue-on-click-outside": "^1.0.3"
   },
   "devDependencies": {

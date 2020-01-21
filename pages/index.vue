@@ -199,6 +199,7 @@ export default {
 .photo-section {
   display: flex;
   flex-flow: row wrap;
+  align-content: center;
   padding: .5vw;
   text-align: center;
 }
@@ -228,7 +229,7 @@ export default {
 }
 @media(max-width:468px) {
   .photo {
-    width: 100%; 
+    width: 25vw; 
     height: auto; 
   }
   .photo-section div {

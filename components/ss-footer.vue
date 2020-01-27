@@ -20,13 +20,11 @@
         <a href="tel:4503611838"><p>450-361-1838</p></a>
         <a href="mailto:allo@saintescene.com"><p>allo@saintescene.com</p></a>
       </div>
-      <router-link to="evenements">
-        <div class="text">
-          <h3>Prochains Événements</h3>
-          <p v-if="currentDate >= 1">Réunion Dimanche <span class="info">10h - 12h</span></p>
-          <p>Réveil Sainte Scène <span class="info" v-if="currentDate <= 3">Mercredi 8h30 </span><span class="info" v-if="currentDate <= 5">Vendredi 8h30</span></p>
-        </div>
-      </router-link>
+      <div class="text">
+        <h3>Prochains Événements</h3>
+        <p v-if="currentDate >= 1">Réunion Dimanche <span class="info">10h - 12h</span></p>
+        <p>Réveil Sainte Scène <span class="info" v-if="currentDate <= 3"><strong>Mercredi</strong> 8h30 </span><span class="info" v-if="currentDate <= 5"><strong>Vendredi</strong> 8h30</span></p>
+      </div>
     </div>
     <img class="footer-coupe" src="../assets/logo-coupe-black.svg" alt="logo coupe rose">
     <div class="footer-right">

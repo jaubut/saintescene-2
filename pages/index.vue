@@ -29,7 +29,7 @@
                   signature="Samuel & Laure Gingras"
     ></BlocMission>
     <div class="photo-section">
-      <vue-instagram token="5476375392.1677ed0.75a8cbb5db614cd394de7a8aa5fe5bee" :count="9" mediaType="image">
+      <vue-instagram token="5476375392.f9b60dd.4226cf27c1134e348ca8ef4dc51a96bf" :count="9" mediaType="image">
         <template v-slot:loading="props">
           <h1 v-if="props.loading" class="fancy-loading">Loading, please wait...</h1>
         </template>

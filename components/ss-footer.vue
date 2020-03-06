@@ -16,14 +16,15 @@
     <div class="text-group">
       <div class="text">
         <h3>Nous rejoindre</h3>
-        <a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744" target="_blank"><p>1236, rue Saint-Charles Sud Granby, Qc, J2J 0L6</p></a>
-        <a href="tel:4503611838"><p>450-361-1838</p></a>
+        <a href="https://www.google.ca/maps/place/369+Rue+MacDonald,+Granby,+QC+J2G+4G5/@45.388251,-72.7347941,17z/data=!4m13!1m7!3m6!1s0x4cc9cfb5275c00ab:0x8fd2646af4df300e!2s369+Rue+MacDonald,+Granby,+QC+J2G+4G5!3b1!8m2!3d45.3884979!4d-72.7347579!3m4!1s0x4cc9cfb5275c00ab:0x8fd2646af4df300e!8m2!3d45.3884979!4d-72.7347579" target="_blank"><p>369 Rue MacDonald, Granby, Qc, J2G 4G5</p></a>
         <a href="mailto:allo@saintescene.com"><p>allo@saintescene.com</p></a>
       </div>
       <div class="text">
         <h3>Prochains Événements</h3>
         <p v-if="currentDate >= 1">Réunion Dimanche <span class="info">10h - 12h</span></p>
+        <!--
         <p>Réveil Sainte Scène <span class="info" v-if="currentDate <= 3"><strong>Mercredi</strong> 8h30 </span><span class="info" v-if="currentDate <= 5"><strong>Vendredi</strong> 8h30</span></p>
+        -->
       </div>
     </div>
     <img class="footer-coupe" src="../assets/logo-coupe-black.svg" alt="logo coupe rose">

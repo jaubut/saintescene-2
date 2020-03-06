@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="alert">
-      <small>Nouveau site en développement.</small>
+      <small>Nouvelle adresse: 369 Rue MacDonald, Granby</small>
     </div>
     <header>
       <router-link to="/">

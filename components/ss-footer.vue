@@ -16,7 +16,8 @@
     <div class="text-group">
       <div class="text">
         <h3>Nous rejoindre</h3>
-        <a href="https://www.google.com/maps/dir/45.5016889,-73.567256/eglise+fusion/@45.4215057,-73.7111229,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cc9ce47052d89b5:0x4ce4d38917fbc21b!2m2!1d-72.7341461!2d45.3959593" target="_blank"><p>223 Rue St Charles S, Granby, Qc, J2G 7A5</p></a>
+        <!-- <a href="https://www.google.com/maps/dir/45.5016889,-73.567256/eglise+fusion/@45.4215057,-73.7111229,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cc9ce47052d89b5:0x4ce4d38917fbc21b!2m2!1d-72.7341461!2d45.3959593" target="_blank"><p>223 Rue St Charles S, Granby, Qc, J2G 7A5</p></a>
+        -->
         <a href="mailto:allo@saintescene.com"><p>allo@saintescene.com</p></a>
       </div>
       <div class="text">

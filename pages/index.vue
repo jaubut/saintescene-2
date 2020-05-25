@@ -23,7 +23,8 @@
         <BlocMessage :message="message" :key="message.fields.urlYoutube"></BlocMessage>
       </template>
     </div>
-    <iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
+    <!--<iframe ref="first-page" src="https://anchor.fm/saintescene/embed" height="auto" width="100%" frameborder="0" scrolling="no"></iframe>
+    -->
     <BlocMission  title="Notre Mission"
                   text="Sainte Scène est une église non traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
                   signature="Samuel & Laure Gingras"

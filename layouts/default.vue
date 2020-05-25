@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="alert">
-      <small>Nouvelle adresse: 223 Rue St Charles S, Granby</small>
+      <small><a target="_blank" href="https://www.facebook.com/saintescene/">Facebook</a> et <a href="https://www.youtube.com/channel/UCSX2aF_9i2D-wPd8gb9qfcw">Youtube</a> live chaque dimanche matin à 10h</small>
     </div>
     <header>
       <router-link to="/">
@@ -18,17 +18,12 @@
     <transition name="transite">
       <main @click="show = false">
         <router-view></router-view>
-        <!-- comments
         <button @click="toggle =! toggle" class="button-notif round-give">Donnez ici</button>
-        -->
         <transition name="fade">
-          <a v-if="toggle" href="https://paypal.me/saintescene" target="blank"><button class="button-notif round-give-2">PayPal</button></a>
+          <a v-if="toggle" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GE9EHQB7SDSPC&source=url" target="blank"><button class="button-notif round-give-2">PayPal</button></a>
         </transition>
         <transition name="fade">
-          <a v-if="toggle" href="https://www.canadahelps.org/fr/dn/35836" target="blank"><button class="button-notif round-give-3">Cana don</button></a>
-        </transition>
-        <transition name="fade">
-          <a v-if="toggle" @click="triggerE" target="blank"><button class="button-notif round-give-4">e-Interact</button></a>
+          <a v-if="toggle" @click="triggerE" target="blank"><button class="button-notif round-give-3">e-Interact</button></a>
         </transition>
       </main>
     </transition>

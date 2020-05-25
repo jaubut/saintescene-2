@@ -121,7 +121,7 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .025em;
-  color: #B2152D;
+  color: black;
   text-decoration: none;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
@@ -130,7 +130,7 @@ html, body {
   cursor: pointer;
 }
 .button-notif:hover {
-  color: #FA7E7E;
+  color: darkgray;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }

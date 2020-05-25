@@ -47,7 +47,7 @@ export default {
 </script>
 <style scoped>
   #Footer {
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template: 5% 65% 20%/5% 45% 45% 5%;
   padding: 10% 0 0 0;

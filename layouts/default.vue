@@ -97,6 +97,10 @@ export default {
     bottom: 0;
     right: 0;
     margin: 25px;
+    height: auto;
+    width: auto;
+    background: #4dbcee;
+    color: black !important;
   }
   .round-give-2 {
     position: fixed;
@@ -142,16 +146,6 @@ export default {
   .menu p {
     color: black;
     line-height: 1.2rem;
-  }
-  @-webkit-keyframes alertgradient {
-    0%{background-position:0% 13%}
-    50%{background-position:100% 88%}
-    100%{background-position:0% 13%}
-  }
-  @-moz-keyframes alertgradient {
-      0%{background-position:0% 13%}
-      50%{background-position:100% 88%}
-      100%{background-position:0% 13%}
   }
   @keyframes alertgradient {
       0%{background-position:0% 13%}
